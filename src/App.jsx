@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar";
-import Home from "./pages/home";
-import Favorites from "./pages/favorites";
-import Details from "./pages/details";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Favorites from "./pages/Favorites";
+import Details from "./pages/Details";
 
-export default function App() {
+function App() {
   return (
     <div>
       <div className="min-h-screen p-6 bg-white text-gray-600 text-lg">
@@ -15,9 +15,11 @@ export default function App() {
 
           <Route path="/favorites" element={<Favorites />} />
 
-          <Route path="/recipe-item/:id" element={<Details />} />
+          <Route path="/RecipeItem.jsx/:id" element={<Details />} />
         </Routes>
       </div>
     </div>
   );
 }
+
+export default App;
